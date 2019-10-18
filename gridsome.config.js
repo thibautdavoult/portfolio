@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+// need to add stylus support
+
 module.exports = {
   siteName: 'Thibaut Davoult',
   templates: {
