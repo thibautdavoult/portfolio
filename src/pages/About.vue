@@ -1,13 +1,16 @@
 <template>
   <Layout>
-    <h1>Want to grab a ☕?</h1>
-    Contact: {firstName}.{lastName}@gmail.com || <a style="text-decoration:none" href="https://twitter.com/thibautdavoult">@thibautdavoult</a>
+    <h1>Ways to contact me ✉️</h1>
+    <p>
+      {firstName}.{lastName}@gmail.com || <a href="https://twitter.com/thibautdavoult">@thibautdavoult</a> || <a href="https://www.linkedin.com/in/thibautdavoult/">in/thibautdavoult/</a>
+      <br><br> 
+      Want to hire me for consulting 📊? I can advise on growth strategy.<br>
+      Want to grab a ☕ and talk growth? Always happy to meet growth folks from the startup world.</p>
     <div class="resume">
       <h2 class="resume__subtitle">Resume</h2>
       <h3 class="resume__entry">Livestorm</h3>
       <p class="resume__dates">2017 - now</p>
       <ul>
-        <li>4th employee, 1st marketing hire</li>
         <li>From 1st marketing hire to building team of 4</li>
         <li>From 100 to 1000+ customers</li>
         <li>From seed to Series A +</li>
@@ -58,10 +61,11 @@ export default {
   .resume__dates
     font-size $base-font-size * 0.85
     color $title-color
-    margin-bottom $s-space
+    margin 0 0 $s-space
 
   ul
     margin-left 0
+    padding-left 0
     list-style-type none
     li
       margin-bottom 0

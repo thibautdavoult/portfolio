@@ -44,11 +44,19 @@ export default {
 
 .post
   .post__content
+    h1
+      margin 10px 0 30px
+      font-size $big
+    p
+      margin-bottom 20px
     img
       width 100%
       margin 0 auto
       display block
       max-width none
+      -webkit-box-shadow 5px 4px 20px 0px rgba(0,0,0,0.06)
+      -moz-box-shadow 5px 4px 20px 0px rgba(0,0,0,0.06)
+      box-shadow 5px 4px 20px 0px rgba(0,0,0,0.06)
     li
       list-style initial
 
