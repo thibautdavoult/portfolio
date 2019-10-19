@@ -28,33 +28,29 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="stylus">
 
-.post-title {
-    text-align: center;
-    margin: var(--space) 0;
-}
+.post-title
+    text-align center
+    margin $space 0
 
-.body {
-    max-width: var(--content-width);
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-radius: var(--radius);
-    padding: var(--space);
-}
+.body
+  max-width $content-width
+  width 100%
+  height 100%
+  background-color rgba($bg-color, .05)
+  border-radius $radius
+  padding $space
 
-.post {
-    &__content {
-        img {
-            width: calc(100% + var(--space) * 2);
-            margin-left: calc(var(--space) * -1);
-            display: block;
-            max-width: none;
-        }
-    }
-}
-
+.post
+  .post__content
+    img
+      width 100%
+      margin 0 auto
+      display block
+      max-width none
+    li
+      list-style initial
 
 </style>
 

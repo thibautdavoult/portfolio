@@ -12,24 +12,23 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.post-card {
-  margin-bottom: var(--space);
-  position: relative;
-  &:hover {
-      box-shadow: inset 0px 35px 0px -30px var(--link-color), 0 0px 0px 0 rgba(0,0,0,.1); 
-  }
+<style scoped lang="stylus">
 
-    &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.0;
-    overflow: hidden;
-    text-indent: -9999px;
-    z-index: 0;
-  }
-}
+.post-card
+  margin-bottom $space
+  position relative
+  &:hover
+      box-shadow inset 0px 35px 0px -30px $link-color, 0 0px 0px 0 rgba(0,0,0,.1)
+
+    .post-card__link
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      opacity 0.0
+      overflow hidden
+      text-indent -9999px
+      z-index 0
+
 </style>

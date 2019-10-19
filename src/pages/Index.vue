@@ -2,6 +2,7 @@
   <Layout>
 
     <div>
+      👷 Posts are WIP 👷
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
       
@@ -41,23 +42,21 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang="stylus">
 
-.title {
-  text-align: center;
-}
+.home-links 
+  a
+    margin-right 1rem
 
-.author-container {
-  display: flex;
-}
+.title
+  text-align center
 
-.author-image {
-  margin: auto;
-  border-radius: 100%;
-  margin-bottom: 1em;
+.author-container
+  display flex
 
-}
+.author-image
+  margin auto
+  border-radius 100%
+  margin-bottom 1em
+
 </style>
