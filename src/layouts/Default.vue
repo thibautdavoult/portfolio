@@ -6,7 +6,7 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Blog</g-link>
-        <g-link class="nav__link" to="/about/">Work with me</g-link>
+        <g-link class="nav__link" to="/about/">Contact</g-link>
       </nav>
     </header>
     <slot/>
@@ -21,34 +21,31 @@ query {
 }
 </static-query>
 
-<style scoped lang="scss">
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
+<style scoped lang="stylus">
 
-.layout {
-  max-width: 860px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+body
+  font-family -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+  margin 0
+  padding 0
+  line-height 1.5
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
+.layout
+  max-width 860px
+  margin 0 auto
+  padding-left 20px
+  padding-right 20px
 
-.nav__link {
-  &:last-child {
-    margin-right: 0px;
-  }
-  margin-right: 20px;
-  text-decoration: none;
-}
+.header
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 20px
+  height 80px
+
+.nav__link
+  &:last-child
+    margin-right 0px
+  margin-right 20px
+  text-decoration none
+  
 </style>

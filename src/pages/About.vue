@@ -1,7 +1,6 @@
 <template>
   <Layout>
-    <h1>Want to work with me?</h1>
-    <p>I advise SaaS companies on growth.<br>
+    <h1>Want to grab a ☕?</h1>
     Contact: {firstName}.{lastName}@gmail.com || <a style="text-decoration:none" href="https://twitter.com/thibautdavoult">@thibautdavoult</a>
     <div class="resume">
       <h2 class="resume__subtitle">Resume</h2>
@@ -44,32 +43,26 @@ export default {
 }
 </script>
 
-<style lang="scss">
-$titles: #173953;
+<style lang="stylus">
 
-.resume {
-  &__subtitle {
-    color: var(--title-color);
-    border-bottom: solid var(--title-color) 4px;
-  }
-  &__entry {
-    color: rgba($titles, 0.8);
-    font-size: calc(var(--base-font-size) * 1.3);
-    margin-bottom: 0px;
-  }
-  &__dates {
-    font-size: calc(var(--base-font-size) * 0.85);
-    color: var(--title-color);
-    margin-bottom: var(--s-space);
-  }
-  ul {
-    margin-left: 0px;
-    list-style-type: none;
-  }
-  ul > li {
-    margin-bottom: 0em;
-  }
-}
+.resume 
+  .resume__subtitle
+    color $title-color
+    border-bottom solid $title-color 4px
+    
+  .resume__entry
+    color rgba($title-color, 0.8)
+    font-size $base-font-size * 1.3
+    margin-bottom 0
 
+  .resume__dates
+    font-size $base-font-size * 0.85
+    color $title-color
+    margin-bottom $s-space
 
+  ul
+    margin-left 0
+    list-style-type none
+    li
+      margin-bottom 0
 </style>
