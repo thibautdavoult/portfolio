@@ -8,7 +8,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   head.link.push({
     rel: 'stylesheet',
-    href: 'http://fonts.googleapis.com/css?family=Poppins:400,600'
+    href: 'https://fonts.googleapis.com/css?family=Poppins:400,600'
   })
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
