@@ -1,7 +1,7 @@
 ---
 title: Using NPS to Farm Positive Reviews
 date: 2019-01-07
-published: false
+published: true
 series: false
 cover_image: ./images/alexandr-podvalny-220262-unsplash.jpg
 canonical_url: false
