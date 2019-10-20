@@ -1,14 +1,17 @@
-# Default starter for Gridsome
+Personal website and blog. 
 
-This is the project you get when you run `gridsome create new-project`.
+# How to dev
 
-### 1. Install Gridsome CLI tool if you don't have
+1. `gridsome develop` to start a local dev server at `http://localhost:8080`
+2. Happy coding 🎉🙌
 
-`npm install --global @gridsome/cli`
+# How to deploy
 
-### 2. Create a Gridsome project
+- Push to master branch (auto deploys to Netlify)
+- Push to other branch and either preview or deploy from branch from Netlify
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+# Link and other resources
+
+Base used for styling: https://github.com/gridsome/gridsome-starter-blog
+Switched Sss for Stylus
+Removed tagging/categories (for now)
