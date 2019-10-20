@@ -16,6 +16,7 @@ export default {
 
 .post-card
   position relative
+  margin-bottom $space
   &:hover
       box-shadow inset 0px 35px 0px -30px $link-color, 0 0px 0px 0 rgba(0,0,0,.1)
 
