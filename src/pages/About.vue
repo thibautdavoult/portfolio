@@ -11,7 +11,7 @@
       <p class="resume__dates">2017 - now: Head of Growth</p>
       <ul>
         <li>From 1st marketing hire to building the growth team</li>
-        <li>From 100 to 1000+ customers</li>
+        <li>From 100 to 10k+ customers</li>
         <li>From seed to Series A +</li>
       </ul>
       <h3 class="resume__entry">Ironhack Webdev Bootcamp</h3>
