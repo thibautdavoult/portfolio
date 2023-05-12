@@ -1,71 +1,61 @@
 <template>
   <Layout>
-    <p>
-      {firstName}.{lastName}@gmail.com || <a href="https://twitter.com/thibautdavoult">@thibautdavoult</a> || <a href="https://www.linkedin.com/in/thibautdavoult/">in/thibautdavoult/</a>
-      <br><br> 
-      Growth and Marketing for B2B SaaS.
-      Head of Growth and Growth consulting.
-    <div class="resume">
-      <h2 class="resume__subtitle">Resume</h2>
-      <h3 class="resume__entry">Livestorm</h3>
-      <p class="resume__dates">2017 - now: Head of Growth</p>
-      <ul>
-        <li>From 1st marketing hire to building the growth team</li>
-        <li>From 100 to 10k+ customers</li>
-        <li>From seed to Series A +</li>
-      </ul>
-      <h3 class="resume__entry">Ironhack Webdev Bootcamp</h3>
-      <p class="resume__dates">2017: Growth Manager</p>
-      <ul>
-        <li>Fullstack JS course (Node.js, Vue)</li>
-        <li>Built 3 apps</li>
-      </ul>
-      <h3 class="resume__entry">Wisembly</h3>
-      <p class="resume__dates">2015 - 2017</p>
-      <ul>
-        <li>Launched app from private beta to 20k+ users</li>
-        <li>Hired & managed 1 CS rep</li>
-        <li>Managed EN and FR content</li>
-      </ul>
-      <h3 class="resume__entry">TOTEMS</h3>
-      <p class="resume__dates">2012 - 2015 (acq: Stripe): Marketing Manager</p>
-      <ul>
-        <li>Managed 1 rebranding & 3 product launches</li>
-        <li>Published on Forbes, Moz, Kiss Metrics, Social Media Examiner</li>
-      </ul>
+
+    <div>
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
+      
+
   </Layout>
 </template>
 
+<page-query>
+query {
+  posts: allPost(filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        date (format: "D. MMMM YYYY")
+        timeToRead
+        description
+        cover_image (width: 770, height: 380, blur: 10)
+        path
+      }
+    }
+  }
+}
+</page-query>
+
+
 <script>
+import PostCard from '~/components/PostCard.vue'
+
 export default {
+  components: {
+    PostCard
+  },
   metaInfo: {
-    title: 'Work with me'
+    title: 'Hello, world!'
   }
 }
 </script>
 
 <style lang="stylus">
 
-.resume 
-  .resume__subtitle
-    color $title-color
-    border-bottom solid $title-color 4px
-    
-  .resume__entry
-    color rgba($title-color, 0.8)
-    font-size $base-font-size * 1.3
-    margin-bottom 0
+.home-links 
+  a
+    margin-right 1rem
 
-  .resume__dates
-    font-size $base-font-size * 0.85
-    color $title-color
-    margin 0 0 $s-space
+.title
+  text-align center
 
-  ul
-    margin-left 0
-    padding-left 0
-    list-style-type none
-    li
-      margin-bottom 0
+.author-container
+  display flex
+
+.author-image
+  margin auto
+  border-radius 100%
+  margin-bottom 1em
+
 </style>
