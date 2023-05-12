@@ -17,7 +17,6 @@
       <p class="resume__dates">2017: Growth Manager</p>
       <ul>
         <li>Fullstack JS course (Node.js, Vue)</li>
-        <li>Built 3 apps</li>
       </ul>
       <h3 class="resume__entry">Wisembly</h3>
       <p class="resume__dates">2015 - 2017</p>
