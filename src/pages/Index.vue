@@ -7,26 +7,26 @@
     <div class="resume">
       <h2 class="resume__subtitle">Resume</h2>
       <h3 class="resume__entry">Livestorm</h3>
-      <p class="resume__dates">2017 - now: Head of Growth</p>
+      <p class="resume__dates">2017 - now: VP Growth Ops</p>
       <ul>
         <li>From 1st marketing hire to building the Growth team</li>
         <li>From 100 to 10k+ customers</li>
         <li>From seed to Series B</li>
       </ul>
       <h3 class="resume__entry">Ironhack Webdev Bootcamp</h3>
-      <p class="resume__dates">2017: Growth Manager</p>
+      <p class="resume__dates">2017</p>
       <ul>
         <li>Fullstack JS course (Node.js, Vue)</li>
       </ul>
       <h3 class="resume__entry">Wisembly</h3>
-      <p class="resume__dates">2015 - 2017</p>
+      <p class="resume__dates">2015 - 2017: Growth Manager</p>
       <ul>
         <li>Launched app from private beta to 20k+ users</li>
         <li>Hired & managed 1 CS rep</li>
         <li>Managed EN and FR content</li>
       </ul>
       <h3 class="resume__entry">TOTEMS</h3>
-      <p class="resume__dates">2012 - 2015 (acq: Stripe): Marketing Manager</p>
+      <p class="resume__dates">2012 - 2015 (acq: Stripe): Content & Marketing Manager</p>
       <ul>
         <li>Managed 1 rebranding & 3 product launches</li>
         <li>Published on Forbes, Moz, Kiss Metrics, Social Media Examiner</li>
