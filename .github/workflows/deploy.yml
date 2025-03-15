@@ -22,8 +22,13 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
-      - name: Install Dependencies
+      - name: Clean install dependencies
         run: npm ci
+
+      - name: Clean previous builds
+        run: |
+          rm -rf .output
+          rm -rf dist
 
       - name: Generate Site
         run: npm run generate
@@ -33,4 +38,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .output/public
-          force_orphan: true # This ensures gh-pages branch only contains the latest build 
+          force_orphan: true # This ensures gh-pages branch only contains the latest build
+          cname: thibautdavoult.com 

@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/portfolio/',
+    baseURL: '/',
     head: {
       title: 'Thibaut Davoult | Marketing & Growth Engineer',
       meta: [
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/portfolio/favicon.svg' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
       ]
     }
   },
@@ -57,5 +57,7 @@ export default defineNuxtConfig({
   // GitHub Pages configuration
   nitro: {
     preset: 'github-pages'
-  }
+  },
+
+  compatibilityDate: '2025-03-15'
 })
