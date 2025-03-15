@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
 
+  // @ts-ignore - Known module configuration
   colorMode: {
     classSuffix: ''
   },
