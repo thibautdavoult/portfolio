@@ -17,6 +17,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  NITRO_PRESET: github-pages
+  NODE_ENV: production
+
 jobs:
   build-and-deploy:
     environment:
@@ -38,10 +42,14 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          npm list @nuxt/content || true
 
       - name: Generate static files
-        run: npm run generate
+        run: |
+          npm run generate
+          ls -la .output/public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

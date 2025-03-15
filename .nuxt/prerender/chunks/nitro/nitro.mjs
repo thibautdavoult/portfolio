@@ -90,7 +90,7 @@ function defaultHandler(error, event, opts) {
   const statusMessage = error.statusMessage || "Server Error";
   const url = getRequestURL(event, { xForwardedHost: true, xForwardedProto: true });
   if (statusCode === 404) {
-    const baseURL = "/";
+    const baseURL = "/portfolio/";
     if (/^\/[^/]/.test(baseURL) && !url.pathname.startsWith(baseURL)) {
       const redirectTo = `${baseURL}${url.pathname.slice(1)}${url.search}`;
       return {
@@ -882,8 +882,8 @@ function _expandFromEnv(value) {
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/",
-    "buildId": "ec6f23dc-fd8e-460d-bce5-251b7e15766b",
+    "baseURL": "/portfolio/",
+    "buildId": "ab3f1078-0e5e-4c98-b228-3ef4a899670a",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },

@@ -74,7 +74,7 @@ function createHead(options = {}) {
   return head;
 }
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Marketing & Growth Engineer helping companies scale their user acquisition and revenue through technical marketing solutions."}],"link":[{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"}],"style":[],"script":[],"noscript":[],"title":"Thibaut Davoult | Marketing & Growth Engineer"};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Marketing & Growth Engineer helping companies scale their user acquisition and revenue through technical marketing solutions."}],"link":[{"rel":"icon","type":"image/svg+xml","href":"/portfolio/favicon.svg"}],"style":[],"script":[],"noscript":[],"title":"Thibaut Davoult | Marketing & Growth Engineer"};
 
 const appRootTag = "div";
 

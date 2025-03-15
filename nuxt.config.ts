@@ -32,9 +32,8 @@ export default defineNuxtConfig({
   },
 
   app: {
-    // Use relative paths for GitHub Pages
-    baseURL: '/portfolio/',
-    buildAssetsDir: '/_nuxt/',
+    baseURL: process.env.NITRO_PRESET === 'github-pages' ? '/portfolio/' : '/',
+    buildAssetsDir: '_nuxt',
     head: {
       title: 'Thibaut Davoult | Marketing & Growth Engineer',
       meta: [
@@ -46,7 +45,11 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/portfolio/favicon.svg' }
+        { 
+          rel: 'icon', 
+          type: 'image/svg+xml', 
+          href: process.env.NITRO_PRESET === 'github-pages' ? '/portfolio/favicon.svg' : '/favicon.svg'
+        }
       ]
     }
   },
@@ -67,10 +70,14 @@ export default defineNuxtConfig({
     }
   },
 
+  // Enable SSG
+  ssr: true,
+  target: 'static',
+
   compatibilityDate: '2025-03-15',
 
   // Add nitro configuration for GitHub Pages
   nitro: {
     preset: 'github-pages'
-  },
+  }
 })
