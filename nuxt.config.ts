@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/',
+    baseURL: '/portfolio/',
     head: {
       title: 'Thibaut Davoult | Marketing & Growth Engineer',
       meta: [
