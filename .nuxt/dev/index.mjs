@@ -7,9 +7,9 @@ import { parentPort, threadId } from 'node:worker_threads';
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import destr from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/destr/dist/index.mjs';
 import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/ufo/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/nuxt/node_modules/unhead/dist/server.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/unhead/dist/server.mjs';
 import { isVNode, toValue, isRef } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/vue/index.mjs';
-import { walkResolver } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/nuxt/node_modules/unhead/dist/utils.mjs';
+import { walkResolver } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/unhead/dist/utils.mjs';
 import { renderToString } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/vue/server-renderer/index.mjs';
 import { createHooks } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/hookable/dist/index.mjs';
 import { createFetch, Headers as Headers$1 } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/ofetch/dist/node.mjs';
@@ -21,7 +21,7 @@ import { createStorage, prefixStorage } from 'file:///Users/thibautdavoult/code/
 import unstorage_47drivers_47fs from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/unstorage/drivers/fs.mjs';
 import { toRouteMatcher, createRouter } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/radix3/dist/index.mjs';
 import { getContext } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/unctx/dist/index.mjs';
-import { digest } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/nitropack/node_modules/ohash/dist/index.mjs';
+import { digest } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/ohash/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
 import consola, { consola as consola$1 } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/consola/dist/index.mjs';
 import { ErrorParser } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/youch-core/build/index.js';
@@ -30,7 +30,7 @@ import { SourceMapConsumer } from 'file:///Users/thibautdavoult/code/perso/portf
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { stringify, uneval } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/devalue/index.js';
 import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/errx/dist/index.js';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/nuxt/node_modules/unhead/dist/plugins.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file:///Users/thibautdavoult/code/perso/portfolio/node_modules/unhead/dist/plugins.mjs';
 
 function isJsonRequest(event) {
   if (hasReqHeader(event, "accept", "text/html")) {

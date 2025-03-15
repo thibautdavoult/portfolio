@@ -17,6 +17,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
+    exposeConfig: true,
+    injectPosition: 0,
+    viewer: true
   },
 
   googleFonts: {
@@ -42,6 +45,22 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
       ]
+    }
+  },
+
+  // Add build configuration
+  build: {
+    transpile: ['@heroicons/vue']
+  },
+
+  // Add vite configuration
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: ''
+        }
+      }
     }
   },
 

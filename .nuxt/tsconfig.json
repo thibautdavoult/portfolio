@@ -24,7 +24,7 @@
         "../node_modules/ofetch"
       ],
       "@unhead/vue": [
-        "../node_modules/nuxt/node_modules/@unhead/vue"
+        "../node_modules/@unhead/vue"
       ],
       "vue": [
         "../node_modules/vue"
@@ -112,6 +112,12 @@
       ],
       "#imports": [
         "./imports"
+      ],
+      "#tailwind-config": [
+        "./tailwind/expose"
+      ],
+      "#tailwind-config/*": [
+        "./tailwind/expose/*"
       ],
       "#app-manifest": [
         "./manifest/meta/dev"

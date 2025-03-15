@@ -50,7 +50,7 @@
         "../node_modules/ofetch"
       ],
       "@unhead/vue": [
-        "../node_modules/nuxt/node_modules/@unhead/vue"
+        "../node_modules/@unhead/vue"
       ],
       "vue": [
         "../node_modules/vue"
