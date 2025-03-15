@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+    font-family: theme('fontFamily.body');
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.display');
+  }
+}
+
+@layer utilities {
+  ::selection {
+    @apply bg-primary-900 text-white dark:bg-primary-100 dark:text-primary-900;
+  }
+} 
