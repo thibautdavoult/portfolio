@@ -113,7 +113,7 @@ async function defaultHandler(error, event, opts) {
   const statusMessage = error.statusMessage || "Server Error";
   const url = getRequestURL(event, { xForwardedHost: true, xForwardedProto: true });
   if (statusCode === 404) {
-    const baseURL = "/";
+    const baseURL = "/portfolio/";
     if (/^\/[^/]/.test(baseURL) && !url.pathname.startsWith(baseURL)) {
       const redirectTo = `${baseURL}${url.pathname.slice(1)}${url.search}`;
       return {
@@ -232,7 +232,7 @@ async function errorHandler(error, event) {
 
 const rootDir = "/Users/thibautdavoult/code/perso/portfolio";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Marketing & Growth Engineer helping companies scale their user acquisition and revenue through technical marketing solutions."}],"link":[{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"}],"style":[],"script":[],"noscript":[],"title":"Thibaut Davoult | Marketing & Growth Engineer"};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Marketing & Growth Engineer helping companies scale their user acquisition and revenue through technical marketing solutions."}],"link":[{"rel":"icon","type":"image/svg+xml","href":"/portfolio/favicon.svg"}],"style":[],"script":[],"noscript":[],"title":"Thibaut Davoult | Marketing & Growth Engineer"};
 
 const appRootTag = "div";
 
@@ -922,9 +922,9 @@ function _expandFromEnv(value) {
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/",
+    "baseURL": "/portfolio/",
     "buildId": "dev",
-    "buildAssetsDir": "_nuxt",
+    "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
   "nitro": {

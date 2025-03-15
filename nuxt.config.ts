@@ -18,9 +18,6 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
-    exposeConfig: true,
-    injectPosition: 0,
-    viewer: true
   },
 
   googleFonts: {
@@ -32,8 +29,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: process.env.NITRO_PRESET === 'github-pages' ? '/portfolio/' : '/',
-    buildAssetsDir: '_nuxt',
+    baseURL: '/portfolio/',
     head: {
       title: 'Thibaut Davoult | Marketing & Growth Engineer',
       meta: [
@@ -45,38 +41,20 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        { 
-          rel: 'icon', 
-          type: 'image/svg+xml', 
-          href: process.env.NITRO_PRESET === 'github-pages' ? '/portfolio/favicon.svg' : '/favicon.svg'
-        }
+        { rel: 'icon', type: 'image/svg+xml', href: '/portfolio/favicon.svg' }
       ]
     }
   },
 
-  // Add build configuration
+  // Basic build configuration
   build: {
     transpile: ['@heroicons/vue']
   },
 
-  // Add vite configuration
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: ''
-        }
-      }
-    }
-  },
-
-  // Enable SSG
+  // Enable static generation
   ssr: true,
-  target: 'static',
 
-  compatibilityDate: '2025-03-15',
-
-  // Add nitro configuration for GitHub Pages
+  // GitHub Pages configuration
   nitro: {
     preset: 'github-pages'
   }
