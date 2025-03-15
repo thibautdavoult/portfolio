@@ -3,11 +3,16 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or master, depending on your default branch name
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
 
     steps:
       - name: Checkout
@@ -17,9 +22,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Generate static files
         run: npm run generate
@@ -28,4 +34,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .output/public 
+          publish_dir: .output/public
+          cname: thibautdavoult.com
+          force_orphan: true # This ensures we don't keep the history of the gh-pages branch 
