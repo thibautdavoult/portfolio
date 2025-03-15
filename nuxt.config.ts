@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/',
+    baseURL: process.env.GITHUB_ACTIONS ? '/portfolio/' : '/',
     head: {
       title: 'Thibaut Davoult | Marketing & Growth Engineer',
       meta: [
@@ -69,6 +69,7 @@ export default defineNuxtConfig({
 
   // Add nitro configuration for GitHub Pages
   nitro: {
-    preset: 'github-pages'
+    preset: 'github-pages',
+    baseURL: process.env.GITHUB_ACTIONS ? '/portfolio/' : '/'
   },
 })
