@@ -1,7 +1,7 @@
 <template>
   <div class="py-10">
     <h1 class="text-2xl text-[#0d2b3e] mb-6 font-display">
-      Growth Marketing Lead and startup advisor in France
+      Growth Marketing Leader and startup advisor in France
     </h1>
     <p class="text-lg text-[#334155] font-light leading-relaxed text-justify">
       Hi 👋, I'm Thibaut, a Growth & Marketing professional with 10+ years of experience in the B2B SaaS industry.<br/>
